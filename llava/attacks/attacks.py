@@ -126,7 +126,7 @@ def run_mcm_attack(sample_attr, table, num_steps, model, tokenizer, suffix_manag
             adv_suffix=adv_suffix, test_prefixes=test_prefixes, images=images,
         )
         pgd_is_success, pgd_loss, pgd_gen_str, pgd_noise = pgd_attack(
-            num_steps=5, model=model, tokenizer=tokenizer, suffix_manager=suffix_manager,
+            num_steps=1, model=model, tokenizer=tokenizer, suffix_manager=suffix_manager,
             adv_suffix=adv_suffix, images=images, test_prefixes=test_prefixes
         )
         
